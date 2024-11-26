@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "../globals.css";
 
 export const metadata = {
@@ -11,7 +12,16 @@ export default function RootLayout({ children }) {
       <body>
         <div className="flex flex-col h-screen">
           <header className="w-full p-4 bg-blue-200">
-            User RootLayout Header
+            <nav>
+              <ul>
+                <li>
+                  <Link href="/products">Products</Link>
+                </li>
+                <li>
+                  <Link href="/shop">shops</Link>
+                </li>
+              </ul>
+            </nav>
           </header>
           <div className="flex-1 p-4">{children}</div>
           <footer className="p-4 bg-slate-100">User RootLayout Footer</footer>

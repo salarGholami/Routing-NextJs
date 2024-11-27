@@ -24,6 +24,7 @@ const products = [
 ];
 
 function Page() {
+  throw new Error("Products Error...");
   return (
     <div>
       <h1>products Page</h1>
